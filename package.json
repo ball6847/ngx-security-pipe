@@ -24,8 +24,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "clean": "rm -rf ./dist",
-    "build": "npm run clean && ngc -p tsconfig-ngc.json",
-    "prettier": "prettier 'src/**/*.*' --write --parser \"typescript\""
+    "build": "npm run clean && ngc -p tsconfig-ngc.json && cp package.json ./dist/",
+    "prettier": "prettier 'src/**/*.*' --write --parser \"typescript\"",
+    "publish:github": "npm run build && gh-pages --dist ./dist --branch npmjs"
   },
   "author": "Porawit Poboonma <ball6847@gmail.com>",
   "license": "ISC"
