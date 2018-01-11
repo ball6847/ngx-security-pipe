@@ -1,0 +1,33 @@
+{
+  "name": "ngx-security-pipe",
+  "version": "0.0.1",
+  "description": "Security Pipe for Angular2+",
+  "main": "./index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "@angular/common": "^5.2.0",
+    "@angular/compiler": "^5.2.0",
+    "@angular/compiler-cli": "^5.2.0",
+    "@angular/core": "^5.2.0",
+    "@angular/platform-browser": "^5.2.0",
+    "@types/core-js": "0.9.44",
+    "@types/jasmine": "^2.8.3",
+    "@types/protractor": "^4.0.0",
+    "codelyzer": "^4.0.2",
+    "rxjs": "^5.5.6",
+    "zone.js": "0.8.20",
+    "prettier": "^1.10.1",
+    "ts-node": "^4.1.0",
+    "tslint": "^5.9.1",
+    "typescript": "^2.6.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "rm -rf ./dist",
+    "build": "npm run clean && ngc -p tsconfig-ngc.json && cp package.json ./dist/",
+    "prettier": "prettier 'src/**/*.*' --write --parser \"typescript\"",
+    "publish:github": "npm run build && gh-pages --dist ./dist --branch npmjs"
+  },
+  "author": "Porawit Poboonma <ball6847@gmail.com>",
+  "license": "ISC"
+}
