@@ -1,0 +1,10 @@
+{
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "typescriptHero.resolver.multiLineWrapThreshold": 120,
+  "typescriptHero.resolver.stringQuoteStyle": "'",
+  "typescriptHero.resolver.insertSemicolons": false,
+  "typescriptHero.resolver.multiLineTrailingComma": true,
+  "[typescript]": {
+    "editor.formatOnSave": false,
+  },
+}
