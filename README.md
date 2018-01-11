@@ -6,6 +6,7 @@ Provide pipes for angular security model, currently contains only `sanitizeHtml`
 Todo
 ----
 
+- [ ] add instruction about installation.
 - [ ] add all possible pipes `sanitizeScript, sanitizeStyle, sanitizeUrl, sanitizeResourceUrl`
 - [ ] publish to npmjs.
 - [ ] add tests.
