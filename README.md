@@ -1,7 +1,7 @@
 Security Pipe for Angular2+
 ===========================
 
-Provide pipe for angular security model, currently on contains `sanitizeHtml` pipe.
+Provide pipes for angular security model, currently contains only `sanitizeHtml` pipe.
 
 Todo
 ----
